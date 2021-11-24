@@ -1,7 +1,7 @@
 define([],function(){
     //載入html
     var simpleSpatialComponentHtml = "";
-    var website_url = "http://127.0.0.1:8000/"
+    var website_url = "/"
     var loadHtml = function(){
         $.ajax({
             url: 'static/componentTemplates/spatialAnalysis/simpleSpatialComponent.html',

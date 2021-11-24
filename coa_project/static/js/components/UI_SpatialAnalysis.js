@@ -1,7 +1,7 @@
 define([],function(){    
     //載入html
     var spatialComponentHtml = "";
-    var website_url = "http://127.0.0.1:8000/"
+    var website_url = "/"
     var loadHtml = function(){
         $.ajax({
             url: 'static/componentTemplates/spatialAnalysis/spatialComponent.html',
@@ -50,7 +50,7 @@ define([],function(){
                 SpatialIsDisable: false, //空間分析圖層開關
                 ClusterIsDisable: false,//聚集區圖層開關
                 MoransPlot: false, // Moran's I散佈圖開關
-                Moran : `<img src = "http://127.0.0.1:8000/api/geoland/morans_scatter">`,
+                Moran : `<img src = "localhost/api/geoland/morans_scatter">`,
                 InfoWindow: false
                }
             },
@@ -261,7 +261,7 @@ define([],function(){
                 LISAColor: function(h) {
 		            return h > 3    ? '#f4a582' : // HL
                    		   h > 2    ? '#0571b0' : // LL
-                           h > 1    ? '#92c5de' : // LH
+	                           h > 1    ? '#92c5de' : // LH
                    		   h > 0    ? '#ca0020' : // HH
 		                              '#bdbdbd' ;
 		        },
